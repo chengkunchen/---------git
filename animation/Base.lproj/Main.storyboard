@@ -48,9 +48,23 @@
                                     <segue destination="FFs-gt-HYv" kind="push" id="Ua1-tM-FR6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRN-68-UDV">
+                                <rect key="frame" x="226" y="282" width="158" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="LNO-0z-v54"/>
+                                    <constraint firstAttribute="height" constant="35" id="ueI-ty-seH"/>
+                                </constraints>
+                                <state key="normal" title="高斯">
+                                    <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="df7-HO-XL8" kind="push" id="JAe-jt-Yn1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qRN-68-UDV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GmH-EO-BCd"/>
                             <constraint firstItem="eFN-I4-LVu" firstAttribute="centerX" secondItem="eKK-6i-0Bl" secondAttribute="centerX" id="XO4-cC-eMw"/>
                             <constraint firstItem="eKK-6i-0Bl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="ZGP-ix-ggj"/>
                             <constraint firstItem="eFN-I4-LVu" firstAttribute="height" secondItem="eKK-6i-0Bl" secondAttribute="height" id="cXJ-Tg-5cO"/>
@@ -58,6 +72,7 @@
                             <constraint firstItem="eKK-6i-0Bl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f2i-wd-IuC"/>
                             <constraint firstItem="eFN-I4-LVu" firstAttribute="top" secondItem="E5F-2h-MPX" secondAttribute="bottom" constant="25" id="hfk-83-rRX"/>
                             <constraint firstItem="E5F-2h-MPX" firstAttribute="centerX" secondItem="eKK-6i-0Bl" secondAttribute="centerX" id="kJ9-iX-tyT"/>
+                            <constraint firstItem="qRN-68-UDV" firstAttribute="top" secondItem="eFN-I4-LVu" secondAttribute="bottom" constant="20" id="pB2-7e-EuA"/>
                             <constraint firstItem="E5F-2h-MPX" firstAttribute="width" secondItem="eKK-6i-0Bl" secondAttribute="width" id="sFL-YF-9lq"/>
                             <constraint firstItem="E5F-2h-MPX" firstAttribute="top" secondItem="eKK-6i-0Bl" secondAttribute="bottom" constant="25" id="tbD-GB-D6T"/>
                             <constraint firstItem="eFN-I4-LVu" firstAttribute="width" secondItem="eKK-6i-0Bl" secondAttribute="width" id="uRk-M3-NtB"/>
@@ -67,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="104"/>
+            <point key="canvasLocation" x="1127" y="92"/>
         </scene>
         <!--Mask View Controller-->
         <scene sceneID="dpU-74-iJQ">
@@ -104,7 +119,7 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UE-JO-6Yh">
-                                        <rect key="frame" x="184" y="612" width="46" height="30"/>
+                                        <rect key="frame" x="184" y="633" width="46" height="30"/>
                                         <state key="normal" title="清理"/>
                                         <connections>
                                             <action selector="cleanBtn:" destination="6lz-Or-X8m" eventType="touchUpInside" id="CKX-DX-X3c"/>
@@ -127,7 +142,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezf-Pq-8FB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1583" y="-544"/>
+            <point key="canvasLocation" x="1272" y="-646"/>
+        </scene>
+        <!--Blur Effect View Controller-->
+        <scene sceneID="x5a-uw-STo">
+            <objects>
+                <viewController id="df7-HO-XL8" customClass="BlurEffectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gRu-LM-EkF"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Zf-lV-vhZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kAo-7D-rIg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRu-8R-Nnj">
+                                <rect key="frame" x="248" y="552" width="93" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="Z7o-74-TZX"/>
+                                    <constraint firstAttribute="height" constant="33" id="efi-do-vxq"/>
+                                </constraints>
+                                <state key="normal" title="高斯切换"/>
+                                <connections>
+                                    <action selector="blueChange:" destination="df7-HO-XL8" eventType="touchUpInside" id="who-sY-f4D"/>
+                                </connections>
+                            </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pae-c8-JV8">
+                                <rect key="frame" x="-23" y="72" width="590" height="472"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8RD-gJ-XNG">
+                                    <rect key="frame" x="0.0" y="0.0" width="590" height="472"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pae-c8-JV8" firstAttribute="leading" secondItem="kAo-7D-rIg" secondAttribute="leading" id="1hs-qP-IC9"/>
+                            <constraint firstItem="Pae-c8-JV8" firstAttribute="top" secondItem="gRu-LM-EkF" secondAttribute="bottom" id="2vU-Ua-azM"/>
+                            <constraint firstItem="9Zf-lV-vhZ" firstAttribute="top" secondItem="FRu-8R-Nnj" secondAttribute="bottom" constant="5" id="Efl-PI-e2s"/>
+                            <constraint firstItem="FRu-8R-Nnj" firstAttribute="top" secondItem="Pae-c8-JV8" secondAttribute="bottom" constant="5" id="F9l-6a-fCq"/>
+                            <constraint firstItem="FRu-8R-Nnj" firstAttribute="centerX" secondItem="kAo-7D-rIg" secondAttribute="centerX" id="Kcj-Q1-L0v"/>
+                            <constraint firstAttribute="trailing" secondItem="Pae-c8-JV8" secondAttribute="trailing" id="fyw-9b-Zor"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KrX-2f-q3v"/>
+                    <connections>
+                        <outlet property="blurBtn" destination="FRu-8R-Nnj" id="BSW-7H-AHH"/>
+                        <outlet property="visulView" destination="Pae-c8-JV8" id="nWL-pq-XDX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqs-qW-m6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1921" y="-735"/>
         </scene>
         <!--View Controller1-->
         <scene sceneID="nVd-bi-TG6">
@@ -146,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vS5-nW-dxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="104"/>
+            <point key="canvasLocation" x="1797" y="63"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xp3-7j-Aym">

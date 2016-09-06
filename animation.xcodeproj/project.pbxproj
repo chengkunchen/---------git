@@ -19,6 +19,7 @@
 		F1DAAC7D1D7D68EC00BE232F /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DAAC7C1D7D68EC00BE232F /* MaskViewController.m */; };
 		F1DAAC801D7D69EB00BE232F /* drawRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DAAC7F1D7D69EB00BE232F /* drawRectViewController.m */; };
 		F1DAAC831D7D6A6A00BE232F /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DAAC821D7D6A6A00BE232F /* DrawView.m */; };
+		F1DAAC8B1D7E69F200BE232F /* BlurEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DAAC8A1D7E69F200BE232F /* BlurEffectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		F1DAAC7F1D7D69EB00BE232F /* drawRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawRectViewController.m; sourceTree = "<group>"; };
 		F1DAAC811D7D6A6A00BE232F /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
 		F1DAAC821D7D6A6A00BE232F /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		F1DAAC891D7E69F200BE232F /* BlurEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurEffectViewController.h; sourceTree = "<group>"; };
+		F1DAAC8A1D7E69F200BE232F /* BlurEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurEffectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,18 +116,11 @@
 		F174BBC31D7D169800C5A026 /* animation */ = {
 			isa = PBXGroup;
 			children = (
+				F1DAAC841D7E68BE00BE232F /* animation */,
 				F174BBC71D7D169800C5A026 /* AppDelegate.h */,
 				F174BBC81D7D169800C5A026 /* AppDelegate.m */,
 				F1DAAC781D7D680500BE232F /* ViewController.h */,
 				F1DAAC791D7D680500BE232F /* ViewController.m */,
-				F174BBCA1D7D169800C5A026 /* ViewController1.h */,
-				F174BBCB1D7D169800C5A026 /* ViewController1.m */,
-				F1DAAC7B1D7D68EC00BE232F /* MaskViewController.h */,
-				F1DAAC7C1D7D68EC00BE232F /* MaskViewController.m */,
-				F1DAAC7E1D7D69EB00BE232F /* drawRectViewController.h */,
-				F1DAAC7F1D7D69EB00BE232F /* drawRectViewController.m */,
-				F1DAAC811D7D6A6A00BE232F /* DrawView.h */,
-				F1DAAC821D7D6A6A00BE232F /* DrawView.m */,
 				F174BBCD1D7D169800C5A026 /* Main.storyboard */,
 				F174BBD01D7D169800C5A026 /* Assets.xcassets */,
 				F174BBD21D7D169800C5A026 /* LaunchScreen.storyboard */,
@@ -158,6 +154,55 @@
 				F174BBEB1D7D169800C5A026 /* Info.plist */,
 			);
 			path = animationUITests;
+			sourceTree = "<group>";
+		};
+		F1DAAC841D7E68BE00BE232F /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				F1DAAC881D7E691800BE232F /* 高斯模糊 */,
+				F1DAAC871D7E68FD00BE232F /* 遮罩 */,
+				F1DAAC861D7E68E800BE232F /* 绘制 */,
+				F1DAAC851D7E68D100BE232F /* 碎屏 */,
+			);
+			name = animation;
+			sourceTree = "<group>";
+		};
+		F1DAAC851D7E68D100BE232F /* 碎屏 */ = {
+			isa = PBXGroup;
+			children = (
+				F174BBCA1D7D169800C5A026 /* ViewController1.h */,
+				F174BBCB1D7D169800C5A026 /* ViewController1.m */,
+			);
+			name = "碎屏";
+			sourceTree = "<group>";
+		};
+		F1DAAC861D7E68E800BE232F /* 绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				F1DAAC7E1D7D69EB00BE232F /* drawRectViewController.h */,
+				F1DAAC7F1D7D69EB00BE232F /* drawRectViewController.m */,
+				F1DAAC811D7D6A6A00BE232F /* DrawView.h */,
+				F1DAAC821D7D6A6A00BE232F /* DrawView.m */,
+			);
+			name = "绘制";
+			sourceTree = "<group>";
+		};
+		F1DAAC871D7E68FD00BE232F /* 遮罩 */ = {
+			isa = PBXGroup;
+			children = (
+				F1DAAC7B1D7D68EC00BE232F /* MaskViewController.h */,
+				F1DAAC7C1D7D68EC00BE232F /* MaskViewController.m */,
+			);
+			name = "遮罩";
+			sourceTree = "<group>";
+		};
+		F1DAAC881D7E691800BE232F /* 高斯模糊 */ = {
+			isa = PBXGroup;
+			children = (
+				F1DAAC891D7E69F200BE232F /* BlurEffectViewController.h */,
+				F1DAAC8A1D7E69F200BE232F /* BlurEffectViewController.m */,
+			);
+			name = "高斯模糊";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +341,7 @@
 				F1DAAC7A1D7D680500BE232F /* ViewController.m in Sources */,
 				F1DAAC831D7D6A6A00BE232F /* DrawView.m in Sources */,
 				F1DAAC801D7D69EB00BE232F /* drawRectViewController.m in Sources */,
+				F1DAAC8B1D7E69F200BE232F /* BlurEffectViewController.m in Sources */,
 				F174BBC61D7D169800C5A026 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
