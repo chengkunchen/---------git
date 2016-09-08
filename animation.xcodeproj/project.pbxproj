@@ -15,6 +15,11 @@
 		F174BBD41D7D169800C5A026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F174BBD21D7D169800C5A026 /* LaunchScreen.storyboard */; };
 		F174BBDF1D7D169800C5A026 /* animationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F174BBDE1D7D169800C5A026 /* animationTests.m */; };
 		F174BBEA1D7D169800C5A026 /* animationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F174BBE91D7D169800C5A026 /* animationUITests.m */; };
+		F1C969321D7FF7FC00A1A497 /* GradentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C969311D7FF7FC00A1A497 /* GradentViewController.m */; };
+		F1C969361D80053500A1A497 /* EmitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C969351D80053500A1A497 /* EmitterViewController.m */; };
+		F1C9693A1D80107100A1A497 /* ReplicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C969391D80107100A1A497 /* ReplicatorViewController.m */; };
+		F1C969401D80F57200A1A497 /* ReplicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C9693F1D80F57200A1A497 /* ReplicatorView.m */; };
+		F1C969461D80FDE800A1A497 /* webView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C969451D80FDE800A1A497 /* webView.m */; };
 		F1DAAC7A1D7D680500BE232F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DAAC791D7D680500BE232F /* ViewController.m */; };
 		F1DAAC7D1D7D68EC00BE232F /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DAAC7C1D7D68EC00BE232F /* MaskViewController.m */; };
 		F1DAAC801D7D69EB00BE232F /* drawRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DAAC7F1D7D69EB00BE232F /* drawRectViewController.m */; };
@@ -56,6 +61,16 @@
 		F174BBE51D7D169800C5A026 /* animationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = animationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F174BBE91D7D169800C5A026 /* animationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = animationUITests.m; sourceTree = "<group>"; };
 		F174BBEB1D7D169800C5A026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1C969301D7FF7FC00A1A497 /* GradentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradentViewController.h; sourceTree = "<group>"; };
+		F1C969311D7FF7FC00A1A497 /* GradentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradentViewController.m; sourceTree = "<group>"; };
+		F1C969341D80053500A1A497 /* EmitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmitterViewController.h; sourceTree = "<group>"; };
+		F1C969351D80053500A1A497 /* EmitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmitterViewController.m; sourceTree = "<group>"; };
+		F1C969381D80107100A1A497 /* ReplicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorViewController.h; sourceTree = "<group>"; };
+		F1C969391D80107100A1A497 /* ReplicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorViewController.m; sourceTree = "<group>"; };
+		F1C9693E1D80F57200A1A497 /* ReplicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorView.h; sourceTree = "<group>"; };
+		F1C9693F1D80F57200A1A497 /* ReplicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorView.m; sourceTree = "<group>"; };
+		F1C969441D80FDE800A1A497 /* webView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webView.h; sourceTree = "<group>"; };
+		F1C969451D80FDE800A1A497 /* webView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webView.m; sourceTree = "<group>"; };
 		F1DAAC781D7D680500BE232F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F1DAAC791D7D680500BE232F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F1DAAC7B1D7D68EC00BE232F /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
@@ -156,9 +171,43 @@
 			path = animationUITests;
 			sourceTree = "<group>";
 		};
+		F1C9692B1D7FF73B00A1A497 /* 颜色渐变 */ = {
+			isa = PBXGroup;
+			children = (
+				F1C969301D7FF7FC00A1A497 /* GradentViewController.h */,
+				F1C969311D7FF7FC00A1A497 /* GradentViewController.m */,
+			);
+			name = "颜色渐变";
+			sourceTree = "<group>";
+		};
+		F1C969331D80051D00A1A497 /* 发射器 */ = {
+			isa = PBXGroup;
+			children = (
+				F1C969341D80053500A1A497 /* EmitterViewController.h */,
+				F1C969351D80053500A1A497 /* EmitterViewController.m */,
+			);
+			name = "发射器";
+			sourceTree = "<group>";
+		};
+		F1C969371D80104D00A1A497 /* 翻转 */ = {
+			isa = PBXGroup;
+			children = (
+				F1C969381D80107100A1A497 /* ReplicatorViewController.h */,
+				F1C969391D80107100A1A497 /* ReplicatorViewController.m */,
+				F1C9693E1D80F57200A1A497 /* ReplicatorView.h */,
+				F1C9693F1D80F57200A1A497 /* ReplicatorView.m */,
+				F1C969441D80FDE800A1A497 /* webView.h */,
+				F1C969451D80FDE800A1A497 /* webView.m */,
+			);
+			name = "翻转";
+			sourceTree = "<group>";
+		};
 		F1DAAC841D7E68BE00BE232F /* animation */ = {
 			isa = PBXGroup;
 			children = (
+				F1C969371D80104D00A1A497 /* 翻转 */,
+				F1C969331D80051D00A1A497 /* 发射器 */,
+				F1C9692B1D7FF73B00A1A497 /* 颜色渐变 */,
 				F1DAAC881D7E691800BE232F /* 高斯模糊 */,
 				F1DAAC871D7E68FD00BE232F /* 遮罩 */,
 				F1DAAC861D7E68E800BE232F /* 绘制 */,
@@ -336,11 +385,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1DAAC7D1D7D68EC00BE232F /* MaskViewController.m in Sources */,
+				F1C969461D80FDE800A1A497 /* webView.m in Sources */,
+				F1C969321D7FF7FC00A1A497 /* GradentViewController.m in Sources */,
 				F174BBCC1D7D169800C5A026 /* ViewController1.m in Sources */,
+				F1C969401D80F57200A1A497 /* ReplicatorView.m in Sources */,
 				F174BBC91D7D169800C5A026 /* AppDelegate.m in Sources */,
 				F1DAAC7A1D7D680500BE232F /* ViewController.m in Sources */,
 				F1DAAC831D7D6A6A00BE232F /* DrawView.m in Sources */,
 				F1DAAC801D7D69EB00BE232F /* drawRectViewController.m in Sources */,
+				F1C9693A1D80107100A1A497 /* ReplicatorViewController.m in Sources */,
+				F1C969361D80053500A1A497 /* EmitterViewController.m in Sources */,
 				F1DAAC8B1D7E69F200BE232F /* BlurEffectViewController.m in Sources */,
 				F174BBC61D7D169800C5A026 /* main.m in Sources */,
 			);
