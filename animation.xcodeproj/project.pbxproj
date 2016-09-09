@@ -15,6 +15,8 @@
 		F174BBD41D7D169800C5A026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F174BBD21D7D169800C5A026 /* LaunchScreen.storyboard */; };
 		F174BBDF1D7D169800C5A026 /* animationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F174BBDE1D7D169800C5A026 /* animationTests.m */; };
 		F174BBEA1D7D169800C5A026 /* animationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F174BBE91D7D169800C5A026 /* animationUITests.m */; };
+		F1BC8A5B1D825818000711C1 /* Quartz2dViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC8A5A1D825818000711C1 /* Quartz2dViewController.m */; };
+		F1BC8A5E1D825843000711C1 /* QuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BC8A5D1D825843000711C1 /* QuartzView.m */; };
 		F1C969321D7FF7FC00A1A497 /* GradentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C969311D7FF7FC00A1A497 /* GradentViewController.m */; };
 		F1C969361D80053500A1A497 /* EmitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C969351D80053500A1A497 /* EmitterViewController.m */; };
 		F1C9693A1D80107100A1A497 /* ReplicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C969391D80107100A1A497 /* ReplicatorViewController.m */; };
@@ -61,6 +63,10 @@
 		F174BBE51D7D169800C5A026 /* animationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = animationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F174BBE91D7D169800C5A026 /* animationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = animationUITests.m; sourceTree = "<group>"; };
 		F174BBEB1D7D169800C5A026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1BC8A591D825818000711C1 /* Quartz2dViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2dViewController.h; sourceTree = "<group>"; };
+		F1BC8A5A1D825818000711C1 /* Quartz2dViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2dViewController.m; sourceTree = "<group>"; };
+		F1BC8A5C1D825843000711C1 /* QuartzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzView.h; sourceTree = "<group>"; };
+		F1BC8A5D1D825843000711C1 /* QuartzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzView.m; sourceTree = "<group>"; };
 		F1C969301D7FF7FC00A1A497 /* GradentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradentViewController.h; sourceTree = "<group>"; };
 		F1C969311D7FF7FC00A1A497 /* GradentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradentViewController.m; sourceTree = "<group>"; };
 		F1C969341D80053500A1A497 /* EmitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmitterViewController.h; sourceTree = "<group>"; };
@@ -171,6 +177,17 @@
 			path = animationUITests;
 			sourceTree = "<group>";
 		};
+		F1BC8A581D82579D000711C1 /* Quartz2d */ = {
+			isa = PBXGroup;
+			children = (
+				F1BC8A591D825818000711C1 /* Quartz2dViewController.h */,
+				F1BC8A5A1D825818000711C1 /* Quartz2dViewController.m */,
+				F1BC8A5C1D825843000711C1 /* QuartzView.h */,
+				F1BC8A5D1D825843000711C1 /* QuartzView.m */,
+			);
+			name = Quartz2d;
+			sourceTree = "<group>";
+		};
 		F1C9692B1D7FF73B00A1A497 /* 颜色渐变 */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +222,7 @@
 		F1DAAC841D7E68BE00BE232F /* animation */ = {
 			isa = PBXGroup;
 			children = (
+				F1BC8A581D82579D000711C1 /* Quartz2d */,
 				F1C969371D80104D00A1A497 /* 翻转 */,
 				F1C969331D80051D00A1A497 /* 发射器 */,
 				F1C9692B1D7FF73B00A1A497 /* 颜色渐变 */,
@@ -385,7 +403,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1DAAC7D1D7D68EC00BE232F /* MaskViewController.m in Sources */,
+				F1BC8A5B1D825818000711C1 /* Quartz2dViewController.m in Sources */,
 				F1C969461D80FDE800A1A497 /* webView.m in Sources */,
+				F1BC8A5E1D825843000711C1 /* QuartzView.m in Sources */,
 				F1C969321D7FF7FC00A1A497 /* GradentViewController.m in Sources */,
 				F174BBCC1D7D169800C5A026 /* ViewController1.m in Sources */,
 				F1C969401D80F57200A1A497 /* ReplicatorView.m in Sources */,

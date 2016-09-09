@@ -96,11 +96,25 @@
                                     <segue destination="joq-J0-fJy" kind="push" id="4Dm-Lu-HrU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5V-fC-3JH">
+                                <rect key="frame" x="128" y="488" width="158" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="SUm-wK-lNG"/>
+                                    <constraint firstAttribute="height" constant="35" id="wNE-0C-fLu"/>
+                                </constraints>
+                                <state key="normal" title="绘制">
+                                    <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mzd-Xo-WIp" kind="push" id="a5P-Vn-lJi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2Xi-C8-Kav" firstAttribute="top" secondItem="qRN-68-UDV" secondAttribute="bottom" constant="20" id="2So-nm-3qx"/>
                             <constraint firstItem="eFN-I4-LVu" firstAttribute="centerX" secondItem="eKK-6i-0Bl" secondAttribute="centerX" id="2nS-XO-OJ5"/>
+                            <constraint firstItem="a5V-fC-3JH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6C8-6M-B4R"/>
                             <constraint firstItem="qRN-68-UDV" firstAttribute="height" secondItem="eKK-6i-0Bl" secondAttribute="height" id="6wm-il-Qo5"/>
                             <constraint firstItem="qRN-68-UDV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GmH-EO-BCd"/>
                             <constraint firstItem="ESU-js-p7E" firstAttribute="top" secondItem="ueH-rS-Gzt" secondAttribute="bottom" constant="21" id="IcI-fB-4gZ"/>
@@ -112,6 +126,7 @@
                             <constraint firstItem="eKK-6i-0Bl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="ZGP-ix-ggj"/>
                             <constraint firstItem="qRN-68-UDV" firstAttribute="centerX" secondItem="eKK-6i-0Bl" secondAttribute="centerX" id="Zyc-1m-5AI"/>
                             <constraint firstItem="ueH-rS-Gzt" firstAttribute="top" secondItem="2Xi-C8-Kav" secondAttribute="bottom" constant="21" id="aFP-HP-fVq"/>
+                            <constraint firstItem="a5V-fC-3JH" firstAttribute="top" secondItem="ESU-js-p7E" secondAttribute="bottom" constant="20" id="aIL-iX-cNL"/>
                             <constraint firstItem="2Xi-C8-Kav" firstAttribute="centerX" secondItem="eKK-6i-0Bl" secondAttribute="centerX" id="cGQ-Xw-SAd"/>
                             <constraint firstItem="eFN-I4-LVu" firstAttribute="height" secondItem="eKK-6i-0Bl" secondAttribute="height" id="cXJ-Tg-5cO"/>
                             <constraint firstItem="E5F-2h-MPX" firstAttribute="height" secondItem="eKK-6i-0Bl" secondAttribute="height" id="dDY-xk-RlU"/>
@@ -133,6 +148,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1698" y="178"/>
+        </scene>
+        <!--Quartz 2d View Controller-->
+        <scene sceneID="Luo-R2-ktn">
+            <objects>
+                <viewController id="Mzd-Xo-WIp" customClass="Quartz2dViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9lv-XO-DgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="6sO-Ik-2xu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7LH-UG-hVd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzv-Fz-VeD">
+                                <rect key="frame" x="128" y="671" width="158" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="aPd-Xg-zaj"/>
+                                    <constraint firstAttribute="height" constant="35" id="b3v-1m-SQf"/>
+                                </constraints>
+                                <state key="normal" title="绘制">
+                                    <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="disPlay:" destination="Mzd-Xo-WIp" eventType="touchUpInside" id="7Kb-Ue-OPM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVg-gh-xq3" customClass="QuartzView">
+                                <rect key="frame" x="0.0" y="64" width="414" height="577"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yVg-gh-xq3" firstAttribute="top" secondItem="9lv-XO-DgU" secondAttribute="bottom" id="4tp-vZ-Vho"/>
+                            <constraint firstItem="Tzv-Fz-VeD" firstAttribute="centerX" secondItem="7LH-UG-hVd" secondAttribute="centerX" id="9kq-9K-KwU"/>
+                            <constraint firstItem="6sO-Ik-2xu" firstAttribute="top" secondItem="Tzv-Fz-VeD" secondAttribute="bottom" constant="30" id="MjN-vH-qjA"/>
+                            <constraint firstItem="yVg-gh-xq3" firstAttribute="leading" secondItem="7LH-UG-hVd" secondAttribute="leading" id="WwD-Vl-6vo"/>
+                            <constraint firstItem="Tzv-Fz-VeD" firstAttribute="top" secondItem="yVg-gh-xq3" secondAttribute="bottom" constant="30" id="kyb-Zd-fgm"/>
+                            <constraint firstAttribute="trailing" secondItem="yVg-gh-xq3" secondAttribute="trailing" id="uXr-NS-OT8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3ta-yM-ndh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="quartView" destination="yVg-gh-xq3" id="Ol6-fs-Mzw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DfQ-2e-TrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2153" y="178"/>
         </scene>
         <!--Mask View Controller-->
         <scene sceneID="dpU-74-iJQ">
